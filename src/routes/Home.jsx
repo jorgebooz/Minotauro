@@ -1,19 +1,23 @@
 import {} from 'react';
 import '../css/estilo.css';
-
+import jordan from "../assets/JORDAN.png"
+import colecoes from '../assets/COLECOES.png'
 
 function Home() {
   return (
     <>
-      <div className="container bg-image">
-        <div className="produtos">
-          <h1>Produtos</h1>
+      <div className="home-main">
 
-          <p>CONHEÇAS OS NOVOS PRODUTOS DA LOJA</p>
+        <div className="jordan">
+          <img src={jordan} alt="Jordan" className='home-image'/>
+
           <a href="" className="btn">
-            Conheça mais
+            MAIS PRODUTOS &#8594;
           </a>       
         </div>
+
+        <img src={colecoes} alt="colecoes" className='home-image'/>
+
       </div>
     </>
   );

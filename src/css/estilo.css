@@ -11,35 +11,58 @@
     background-color: #1043CF;
     color: #fff;
     padding: 20px 60px 20px ;
-  }
-  
+}
 .nav-menu{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-  
 .nav-menu a {
     color: #fff;
     text-decoration: none;
     margin-left: 10px;
-  }
+}
   
+
+.home-main{
+  padding: 4rem 5rem 6rem 5rem;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-main h1{
+  padding: 20px 0;
+  font-size: 35pt;
+}
+.home-image{
+  width: 50vw;
+}
+.btn{
+  color: #1043CF;
+  display: inline-block;
+  justify-content: end;
+  padding: 5rem 0px;
+}
+.btn::after{
+  color: #1043CF;
+}
+
+
 .footer {
     background-color: #333;
     color: white;
     font-family: "poppins", Arial, Helvetica, sans-serif;
     padding: 20px;
-  }
-  
+}
 .address {
     font-weight: 200;
-  }
+}
   
 .copy-right {
     text-align: center;
-  }
+}
   
 
   
