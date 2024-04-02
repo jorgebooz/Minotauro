@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.header{
+    display: flex;
+    padding: 3rem;
+    gap: 5rem;
+    align-items: center;
+
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+}
+.azul{
+    color: #1043CF;
+}
+.header p{
+    font-weight: 300;
+    font-size: small;
+}
+
+.card{
+    width: 412px;
+    height: 536px;
+}
