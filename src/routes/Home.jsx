@@ -1,7 +1,7 @@
 import {} from 'react';
 import '../css/estilo.css';
-import jordan from "../assets/JORDAN.png"
-import colecoes from '../assets/COLECOES.png'
+import jordan from "../assets/JORDAN.svg"
+import colecoes from '../assets/COLECOES.svg'
 
 function Home() {
   return (

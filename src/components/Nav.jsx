@@ -1,7 +1,7 @@
 import {} from 'react';
 import { Link } from 'react-router-dom';
 import '../css/estilo.css';
-import logo from "../assets/MINOTAURO.png"
+import logo from "../assets/MINOTAURO.svg"
 
 function Nav() {
   return (
@@ -12,15 +12,18 @@ function Nav() {
                 <img src={logo} alt="" />
               </Link>
             <ul>
-              <Link to="/" className="tlink">
+            <Link to="/" className="tlink">
+                Home
+              </Link>{' '}
+              <Link to="/produtos" className="tlink">
                 Produtos
               </Link>{' '}
               {''}
               <Link to="/sobre" className="tlink">
-                Contato
+                Sobre
               </Link>
               <Link to="/portifolio" className="tlink">
-                Sobre
+                Contato
               </Link>
             </ul>
         </nav>
