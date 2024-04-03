@@ -6,16 +6,21 @@
 }
 
 .produtos h1{
-    padding: 3rem;
+    padding: 3rem 3rem 3rem 15rem;
 }
-.produtos{
-    padding: 0rem 0rem 5rem 0rem;
+container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 6rem;
+}
+img{
+    width: 100%;
 }
 .produtos-grade{
     display: flex;
-    padding: 1rem;
     gap: 1rem;
-    justify-content: center;
 }
 .produtos-titulo{
     font-weight: 600;

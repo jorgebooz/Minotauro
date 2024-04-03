@@ -19,12 +19,13 @@ function Nav() {
                 Produtos
               </Link>{' '}
               {''}
+              <Link to="/contato" className="tlink">
+                Contato
+              </Link>
               <Link to="/sobre" className="tlink">
                 Sobre
               </Link>
-              <Link to="/portifolio" className="tlink">
-                Contato
-              </Link>
+              
             </ul>
         </nav>
       </header>

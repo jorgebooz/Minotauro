@@ -12,90 +12,93 @@ function Produtos() {
       <section className="produtos">
         <h1>Produtos</h1>
 
-        <div className="produtos-grade">
-            <div className='produtos-item'>
-              <img src={vermelho} alt="vermelho" />
-              <p className='produtos-titulo'>HYPERBOOST</p>
-              <p className="produtos-preco">160$</p>
-              <img src={cinco} alt="estrelas" />
-            </div>
-            <div className='produtos-item'>
-              <img src={branco} alt="vermelho" />
-              <p className='produtos-titulo'>ULTRAWIDE</p>
-              <p className="produtos-preco">140$</p>
-              <img src={cinco} alt="estrelas" />
-            </div>
-            <div className='produtos-item'>
-              <img src={azul} alt="vermelho" />
-              <p className='produtos-titulo'>GIGANTAMAX</p>
-              <p className="produtos-preco">180$</p>
-              <img src={cinco} alt="estrelas" />
-            </div>
-            <div className='produtos-item'>
-              <img src={verde} alt="vermelho" />
-              <p className='produtos-titulo'>MEGA-EVOLUTION</p>
-              <p className="produtos-preco">200$</p>
-              <img src={cinco} alt="estrelas" />
-            </div>
-        </div>
+        <container>
 
-        <div className="produtos-grade">
-            <div className='produtos-item'>
-              <img src={azul} alt="vermelho" />
-              <p className='produtos-titulo'>GIGANTAMAX</p>
-              <p className="produtos-preco">180$</p>
-              <img src={cinco} alt="estrelas" />
+            <div className="produtos-grade">
+                <div className='produtos-item'>
+                  <img src={vermelho} alt="vermelho" />
+                  <p className='produtos-titulo'>HYPERBOOST</p>
+                  <p className="produtos-preco">160$</p>
+                  <img src={cinco} alt="estrelas" />
+                </div>
+                <div className='produtos-item'>
+                  <img src={branco} alt="vermelho" />
+                  <p className='produtos-titulo'>ULTRAWIDE</p>
+                  <p className="produtos-preco">140$</p>
+                  <img src={cinco} alt="estrelas" />
+                </div>
+                <div className='produtos-item'>
+                  <img src={azul} alt="vermelho" />
+                  <p className='produtos-titulo'>GIGANTAMAX</p>
+                  <p className="produtos-preco">180$</p>
+                  <img src={cinco} alt="estrelas" />
+                </div>
+                <div className='produtos-item'>
+                  <img src={verde} alt="vermelho" />
+                  <p className='produtos-titulo'>MEGA-EVOLUTION</p>
+                  <p className="produtos-preco">200$</p>
+                  <img src={cinco} alt="estrelas" />
+                </div>
             </div>
-            <div className='produtos-item'>
-              <img src={verde} alt="vermelho" />
-              <p className='produtos-titulo'>MEGA-EVOLUTION</p>
-              <p className="produtos-preco">200$</p>
-              <img src={cinco} alt="estrelas" />
-            </div> 
-            <div className='produtos-item'>
-              <img src={vermelho} alt="vermelho" />
-              <p className='produtos-titulo'>HYPERBOOST</p>
-              <p className="produtos-preco">160$</p>
-              <img src={cinco} alt="estrelas" />
-            </div>
-            <div className='produtos-item'>
-              <img src={branco} alt="vermelho" />
-              <p className='produtos-titulo'>ULTRAWIDE</p>
-              <p className="produtos-preco">140$</p>
-              <img src={cinco} alt="estrelas" />
-            </div>
-            
-        </div>
 
-        <div className="produtos-grade">
-            <div className='produtos-item'>
-              <img src={branco} alt="vermelho" />
-              <p className='produtos-titulo'>ULTRAWIDE</p>
-              <p className="produtos-preco">140$</p>
-              <img src={cinco} alt="estrelas" />
-            </div>
-            <div className='produtos-item'>
-              <img src={vermelho} alt="vermelho" />
-              <p className='produtos-titulo'>HYPERBOOST</p>
-              <p className="produtos-preco">160$</p>
-              <img src={cinco} alt="estrelas" />
-            </div>
-            <div className='produtos-item'>
-              <img src={verde} alt="vermelho" />
-              <p className='produtos-titulo'>MEGA-EVOLUTION</p>
-              <p className="produtos-preco">200$</p>
-              <img src={cinco} alt="estrelas" />
-            </div> 
-            <div className='produtos-item'>
-              <img src={azul} alt="vermelho" />
-              <p className='produtos-titulo'>GIGANTAMAX</p>
-              <p className="produtos-preco">180$</p>
-              <img src={cinco} alt="estrelas" />
-            </div>
-            
-            
-        </div>
+            <div className="produtos-grade">
+                <div className='produtos-item'>
+                  <img src={azul} alt="vermelho" />
+                  <p className='produtos-titulo'>GIGANTAMAX</p>
+                  <p className="produtos-preco">180$</p>
+                  <img src={cinco} alt="estrelas" />
+                </div>
+                <div className='produtos-item'>
+                  <img src={verde} alt="vermelho" />
+                  <p className='produtos-titulo'>MEGA-EVOLUTION</p>
+                  <p className="produtos-preco">200$</p>
+                  <img src={cinco} alt="estrelas" />
+                </div> 
+                <div className='produtos-item'>
+                  <img src={vermelho} alt="vermelho" />
+                  <p className='produtos-titulo'>HYPERBOOST</p>
+                  <p className="produtos-preco">160$</p>
+                  <img src={cinco} alt="estrelas" />
+                </div>
+                <div className='produtos-item'>
+                  <img src={branco} alt="vermelho" />
+                  <p className='produtos-titulo'>ULTRAWIDE</p>
+                  <p className="produtos-preco">140$</p>
+                  <img src={cinco} alt="estrelas" />
+                </div>
+              
+          </div>
 
+          <div className="produtos-grade">
+              <div className='produtos-item'>
+                <img src={branco} alt="vermelho" />
+                <p className='produtos-titulo'>ULTRAWIDE</p>
+                <p className="produtos-preco">140$</p>
+                <img src={cinco} alt="estrelas" />
+              </div>
+              <div className='produtos-item'>
+                <img src={vermelho} alt="vermelho" />
+                <p className='produtos-titulo'>HYPERBOOST</p>
+                <p className="produtos-preco">160$</p>
+                <img src={cinco} alt="estrelas" />
+              </div>
+              <div className='produtos-item'>
+                <img src={verde} alt="vermelho" />
+                <p className='produtos-titulo'>MEGA-EVOLUTION</p>
+                <p className="produtos-preco">200$</p>
+                <img src={cinco} alt="estrelas" />
+              </div> 
+              <div className='produtos-item'>
+                <img src={azul} alt="vermelho" />
+                <p className='produtos-titulo'>GIGANTAMAX</p>
+                <p className="produtos-preco">180$</p>
+                <img src={cinco} alt="estrelas" />
+              </div>
+              
+              
+          </div>
+
+        </container>
 
       </section>
     </>
