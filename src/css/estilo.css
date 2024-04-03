@@ -57,10 +57,20 @@
     font-family: "poppins", Arial, Helvetica, sans-serif;
     padding: 20px;
 }
+.top{
+  display: flex;
+  justify-content: space-between;
+}
 .endereço {
     font-weight: 200;
 }
-  
+.integrantes{
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  font-weight: 200;
+
+}
 .copy-right {
     text-align: center;
 }
