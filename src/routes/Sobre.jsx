@@ -19,7 +19,7 @@ function Sobre() {
 
       <div className='cards'>
         <div className='card'>
-            <img src={foguete} alt="foguetada" />
+            <img src={foguete} alt="foguetada" className="imagem" />
             <p className='card-title'>Lorem Ipsum is simply</p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
           </div>

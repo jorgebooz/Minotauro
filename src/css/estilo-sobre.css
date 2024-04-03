@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
+
 .sobre{
     display: flex;
     flex-direction: column;
@@ -77,4 +78,7 @@
 }
 .card p{
     width: 80%;
+}
+.card img{
+    width: 20%;
 }
