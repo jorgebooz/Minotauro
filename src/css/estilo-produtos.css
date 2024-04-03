@@ -6,7 +6,9 @@
 }
 
 .produtos h1{
-    font-size: 28;
+    font-size: 28pt;
+    font-weight: 600;
+    padding: 3rem;
 }
 container {
     display: flex;
