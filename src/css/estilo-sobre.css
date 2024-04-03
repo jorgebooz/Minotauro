@@ -21,7 +21,7 @@
     text-align: center;
     font-weight: 1000;
 }
-.titulo{
+.titulo-sobre{
     display: flex;
     flex-direction: column;
     font-size: large;
@@ -79,6 +79,6 @@
 .card p{
     width: 80%;
 }
-.card img{
+.imagem {
     width: 20%;
-}
+}   

@@ -9,7 +9,7 @@ function Sobre() {
     <>
       <section className="sobre">
         <div className='header'>
-          <div className='titulo'>
+          <div className='titulo-sobre'>
             <h1><a className='azul'>Quem</a> somos nós?</h1>
           </div>
           
@@ -23,13 +23,13 @@ function Sobre() {
             <p className='card-title'>Lorem Ipsum is simply</p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
           </div>
-          <div className='card'>
-            <img src={idea} alt="foguetada" />
+          <div className='card' >
+            <img src={idea} alt="foguetada" className="imagem"/>
             <p className='card-title'>Lorem Ipsum is simply</p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
           </div>
           <div className='card'>
-            <img src={completecircle} alt="foguetada" />
+            <img src={completecircle} alt="foguetada" className="imagem"/>
             <p className='card-title'>Lorem Ipsum is simply</p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
           </div>
