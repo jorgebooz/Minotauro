@@ -6,6 +6,7 @@ import Home from './routes/Home.jsx'
 import Sobre from './routes/Sobre.jsx'
 import Produtos from './routes/Produtos.jsx'
 import Error from './routes/Error.jsx' 
+import Contato from './routes/Contato.jsx' 
 
 const router = createBrowserRouter ([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter ([
       {path: '/', element: <Home />},
       {path: '/Sobre', element: <Sobre />},
       {path: '/Produtos', element: <Produtos />},
+      {path: '/Contato', element: <Contato />},
     ]
   }
 ])

@@ -6,7 +6,7 @@
 }
 
 .produtos h1{
-    padding: 3rem 3rem 3rem 15rem;
+    font-size: 28;
 }
 container {
     display: flex;
