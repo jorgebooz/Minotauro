@@ -1,6 +1,8 @@
 import {} from 'react';
 import '../css/estilo-sobre.css'
 import foguete from '../assets/FOGUETE.svg'
+import idea from '../assets/IDEA.svg'
+import completecircle from '../assets/COMPLETECIRCLE.svg'
 
 function Sobre() {
   return (
@@ -15,11 +17,24 @@ function Sobre() {
           </p>
         </div>
 
+      <div className='cards'>
         <div className='card'>
-          <img src={foguete} alt="foguetada" />
-          <h1>Lorem Ipsum is simply</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-        </div>
+            <img src={foguete} alt="foguetada" />
+            <p className='card-title'>Lorem Ipsum is simply</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          </div>
+          <div className='card'>
+            <img src={idea} alt="foguetada" />
+            <p className='card-title'>Lorem Ipsum is simply</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          </div>
+          <div className='card'>
+            <img src={completecircle} alt="foguetada" />
+            <p className='card-title'>Lorem Ipsum is simply</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          </div>
+      </div>
+        
         
       </section>
 

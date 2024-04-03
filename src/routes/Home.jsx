@@ -11,7 +11,7 @@ function Home() {
         <div className="jordan">
           <img src={jordan} alt="Jordan" className='home-image'/>
 
-          <a href="" className="btn">
+          <a href="/produtos" className="btn">
             MAIS PRODUTOS &#8594;
           </a>       
         </div>
