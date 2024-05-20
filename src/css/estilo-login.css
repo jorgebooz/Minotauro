@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerLogin{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin: 10rem;
+    border: 1px solid #1043CF;
+}
+.containerLogin:hover{
+    box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.2)
+}
+.containerLogin h1 {
+    border-bottom: 2px solid #1043CF; 
+    margin-bottom: 2rem;
+}
+.containerLogin button{
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #1043CF;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.containerLogin button:hover,
+.containerLogin button:focus {
+  background-color: #149dec;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.containerLogin button:hover {
+  transform: translateY(-1px);
+}
+
+.containerLogin button:active {
+  background-color: #0f20b8;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+.textLogin{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+
+.textLogin input{
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.optionsLogin{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+
+
+
+

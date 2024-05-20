@@ -25,6 +25,9 @@ function Nav() {
               <Link to="/sobre" className="tlink">
                 Sobre
               </Link>
+              <Link to="/login" className="tlink">
+                Login
+              </Link>
               
             </ul>
         </nav>
