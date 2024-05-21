@@ -10,7 +10,7 @@ Projeto desenvolvido para o checkpoint 01 da materia de Web Development do 2ª s
 
 Jorge Booz - RM 552700
 
-Caio Hideki Cardenas Ishizu - RM 553630
+Caio Hideki Cardenas Ishizu - RM 553630 
 
 Erick Molina Barreiros - RM 553852
  
