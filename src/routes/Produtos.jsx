@@ -5,22 +5,17 @@ import ListaProdutos from '../components/ListaProdutos';
 import '../css/estilo-produtos.css';
 
 export default function Produtos() {
-  // Inicializa o estado dos produtos com a lista de produtos
   const [produtos, setProdutos] = useState(ListaProdutos);
 
   const handleEdit = (id) => {
     const produto = produtos.find(item => item.id === id);
 
-    // Solicita ao usuário o novo nome do produto
     const novoNome = window.prompt('Qual o novo nome do produto?', produto.nome);
     if (novoNome !== null) {
-      // Solicita ao usuário a nova descrição do produto
       const novaDescricao = window.prompt('Qual a nova descrição do produto?', produto.descricao);
       if (novaDescricao !== null) {
-        // Solicita ao usuário o novo valor do produto
         const novoValor = window.prompt('Qual o novo valor do produto?', produto.valor);
         if (novoValor !== null) {
-          // Atualiza o produto na lista
           const produtoEditado = {
             ...produto,
             nome: novoNome,
@@ -30,11 +25,16 @@ export default function Produtos() {
           const index = produtos.findIndex(item => item.id === id);
           const novaLista = [...produtos];
           novaLista[index] = produtoEditado;
-          // Atualiza o estado dos produtos com a lista atualizada
           setProdutos(novaLista);
         }
       }
     }
+  };
+
+  const handleDelete = (id) => {
+    const novaLista = produtos.filter(item => item.id !== id);
+    setProdutos(novaLista);
+   
   };
 
   return (
@@ -64,9 +64,9 @@ export default function Produtos() {
                   </button>
                   {' '}
                   |
-                  <Link to={`/excluir/${item.id}`}>
+                  <button onClick={() => handleDelete(item.id)}>
                     <GrTrash />
-                  </Link>
+                  </button>
                 </td>
               </tr>
             ))}
