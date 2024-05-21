@@ -12,7 +12,7 @@ Jorge Booz - RM 552700
 
 Caio Hideki Cardenas Ishizu - RM 553630 
 
-Erick Molina Barreiros - RM 553852
+Erick Molina - RM 553852 
  
 João Viktor Carvalho de Souza - RM 552613
 
