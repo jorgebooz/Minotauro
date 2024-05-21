@@ -48,25 +48,25 @@ function Home() {
         </a>
 
           <div className="produtos-grade produtosHome">
-              <Link to="/produtos" className='produtos-item'> {/* Use Link aqui também */}
+              <Link to="/produtos" className='produtos-item'>
               <img src={vermelho} alt="vermelho" />
               <p className='produtos-titulo'>HYPERBOOST</p>
               <p className="produtos-preco">160$</p>
               <img src={cinco} alt="estrelas" />
             </Link>
-            <Link to="/produtos" className='produtos-item'> {/* Use Link aqui também */}
+            <Link to="/produtos" className='produtos-item'>
               <img src={branco} alt="vermelho" />
               <p className='produtos-titulo'>ULTRAWIDE</p>
               <p className="produtos-preco">140$</p>
               <img src={cinco} alt="estrelas" />
             </Link>
-            <Link to="/produtos" className='produtos-item'> {/* Use Link aqui também */}
+            <Link to="/produtos" className='produtos-item'>
               <img src={azul} alt="vermelho" />
               <p className='produtos-titulo'>GIGANTAMAX</p>
               <p className="produtos-preco">180$</p>
               <img src={cinco} alt="estrelas" />
             </Link>
-            <Link to="/produtos" className='produtos-item'> {/* Use Link aqui também */}
+            <Link to="/produtos" className='produtos-item'>
               <img src={verde} alt="vermelho" />
               <p className='produtos-titulo'>MEGA-EVOLUTION</p>
               <p className="produtos-preco">200$</p>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { GrFormEdit, GrTrash } from 'react-icons/gr';
 import ListaProdutos from '../components/ListaProdutos';
 import '../css/estilo-produtos.css';

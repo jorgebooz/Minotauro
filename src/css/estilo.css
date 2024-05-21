@@ -51,23 +51,43 @@
 
 
 .menu {
-    font-family: "Poppins", Arial, Helvetica, sans-serif ;
-    font-weight: 500;
-    background-color: #1043CF;
-    color: #fff;
-    padding: 20px 60px 20px ;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  background-color: #1043CF;
+  color: #fff;
+  padding: 20px 60px 20px;
 }
-.nav-menu{
+
+.nav-menu {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
+
 .nav-menu a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+  position: relative; /* Para posicionar o ::after corretamente */
 }
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Posiciona a linha abaixo do link */
+  left: 0; /* Começa da esquerda */
+  width: 0; /* Começa sem largura */
+  height: 1px; /* Define a altura da linha */
+  background-color: #fff; /* Cor da linha */
+  transition: width 0.3s ease; /* Adiciona uma transição para a largura */
+}
+
+.nav-menu a:hover::after {
+  width: 100%; /* Quando passar o mouse por cima, a linha se estende de 0 a 100% */
+}
+
+
   
 
 
@@ -90,11 +110,25 @@
 
 
 .footer {
-    background-color: #333;
-    color: white;
-    font-family: "poppins", Arial, Helvetica, sans-serif;
-    padding: 20px;
+  background-color: #333;
+  color: white;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.icon {
+  font-size: 30px;
+}
+
 .top{
   display: flex;
   justify-content: space-between;

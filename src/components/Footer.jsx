@@ -1,8 +1,7 @@
-import {} from 'react';
-
+import React from 'react';
+import { FaFacebook, FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 function Footer() {
-
   return (
     <footer className="footer">
       <div className='top'>
@@ -24,6 +23,13 @@ function Footer() {
       
       <div className="copy-right">
         <p>© Todos os direitos reservados a FIAP</p>
+      </div>
+      
+      <div className="social-icons">
+        <FaFacebook className="icon" />
+        <FaInstagram className="icon" />
+        <FaLinkedin className="icon" />
+        <FaEnvelope className="icon" />
       </div>
     </footer>
   );
