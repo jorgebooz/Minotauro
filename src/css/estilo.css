@@ -6,6 +6,50 @@
     box-sizing: border-box;
   }
 
+ 
+  .textHome { grid-area: texto; }
+  .homeImage{ grid-area: image; }
+  .produtos-grade{ grid-area: produtos; } 
+
+  .mainHome {
+    display: grid;
+    grid-template-areas:
+      'texto image image'
+      'texto image image'
+      'produtos produtos produtos';
+    padding: 2rem;
+    gap: 2rem;
+    height: 150vh;
+  }
+  .textHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 40vw;
+  }
+
+.tituloHome{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeImage{
+  width: 50vw;
+}
+
+.produtosHome{
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
 .menu {
     font-family: "Poppins", Arial, Helvetica, sans-serif ;
     font-weight: 500;
@@ -26,13 +70,7 @@
 }
   
 
-.home-main{
-  padding: 4rem 5rem 6rem 5rem;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .home-main h1{
   padding: 20px 0;
   font-size: 35pt;
