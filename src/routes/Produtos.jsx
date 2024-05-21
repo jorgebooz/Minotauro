@@ -2,24 +2,38 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { GrFormEdit, GrTrash } from 'react-icons/gr';
 import ListaProdutos from '../components/ListaProdutos';
-import '../css/estilo-produto.css';
+import '../css/estilo-produtos.css';
 
 export default function Produtos() {
   // Inicializa o estado dos produtos com a lista de produtos
   const [produtos, setProdutos] = useState(ListaProdutos);
 
   const handleEdit = (id) => {
-    // Lógica de edição
-  };
+    const produto = produtos.find(item => item.id === id);
 
-  const handleDelete = (id) => {
-    // Confirmação de exclusão
-    const confirmacao = window.confirm('Tem certeza que deseja excluir este produto?');
-    if (confirmacao) {
-      // Remove o produto da lista
-      const novaLista = produtos.filter(item => item.id !== id);
-      // Atualiza o estado dos produtos com a lista atualizada
-      setProdutos(novaLista);
+    // Solicita ao usuário o novo nome do produto
+    const novoNome = window.prompt('Qual o novo nome do produto?', produto.nome);
+    if (novoNome !== null) {
+      // Solicita ao usuário a nova descrição do produto
+      const novaDescricao = window.prompt('Qual a nova descrição do produto?', produto.descricao);
+      if (novaDescricao !== null) {
+        // Solicita ao usuário o novo valor do produto
+        const novoValor = window.prompt('Qual o novo valor do produto?', produto.valor);
+        if (novoValor !== null) {
+          // Atualiza o produto na lista
+          const produtoEditado = {
+            ...produto,
+            nome: novoNome,
+            descricao: novaDescricao,
+            valor: novoValor
+          };
+          const index = produtos.findIndex(item => item.id === id);
+          const novaLista = [...produtos];
+          novaLista[index] = produtoEditado;
+          // Atualiza o estado dos produtos com a lista atualizada
+          setProdutos(novaLista);
+        }
+      }
     }
   };
 
@@ -50,9 +64,9 @@ export default function Produtos() {
                   </button>
                   {' '}
                   |
-                  <button onClick={() => handleDelete(item.id)}>
+                  <Link to={`/excluir/${item.id}`}>
                     <GrTrash />
-                  </button>
+                  </Link>
                 </td>
               </tr>
             ))}
