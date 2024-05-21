@@ -1,107 +1,64 @@
-import {} from 'react';
-import '../css/estilo-produtos.css';
-import vermelho from '../assets/TENIS-VERMELHO.svg'
-import branco from '../assets/TENIS-BRANCO.svg'
-import azul from '../assets/TENIS-AZUL.svg'
-import verde from '../assets/TESNIS-VERDE.svg'
-import cinco from '../assets/FIVE-STARS.svg'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { GrFormEdit, GrTrash } from 'react-icons/gr';
+import ListaProdutos from '../components/ListaProdutos';
+import '../css/estilo-produto.css';
 
-function Produtos() {
+export default function Produtos() {
+  // Inicializa o estado dos produtos com a lista de produtos
+  const [produtos, setProdutos] = useState(ListaProdutos);
+
+  const handleEdit = (id) => {
+    // Lógica de edição
+  };
+
+  const handleDelete = (id) => {
+    // Confirmação de exclusão
+    const confirmacao = window.confirm('Tem certeza que deseja excluir este produto?');
+    if (confirmacao) {
+      // Remove o produto da lista
+      const novaLista = produtos.filter(item => item.id !== id);
+      // Atualiza o estado dos produtos com a lista atualizada
+      setProdutos(novaLista);
+    }
+  };
+
   return (
-    <>
-      <section className="produtos">
-        <h1>Produtos</h1>
-
-        <container>
-
-            <div className="produtos-grade">
-                <div className='produtos-item'>
-                  <img src={vermelho} alt="vermelho" />
-                  <p className='produtos-titulo'>HYPERBOOST</p>
-                  <p className="produtos-preco">160$</p>
-                  <img src={cinco} alt="estrelas" />
-                </div>
-                <div className='produtos-item'>
-                  <img src={branco} alt="vermelho" />
-                  <p className='produtos-titulo'>ULTRAWIDE</p>
-                  <p className="produtos-preco">140$</p>
-                  <img src={cinco} alt="estrelas" />
-                </div>
-                <div className='produtos-item'>
-                  <img src={azul} alt="vermelho" />
-                  <p className='produtos-titulo'>GIGANTAMAX</p>
-                  <p className="produtos-preco">180$</p>
-                  <img src={cinco} alt="estrelas" />
-                </div>
-                <div className='produtos-item'>
-                  <img src={verde} alt="vermelho" />
-                  <p className='produtos-titulo'>MEGA-EVOLUTION</p>
-                  <p className="produtos-preco">200$</p>
-                  <img src={cinco} alt="estrelas" />
-                </div>
-            </div>
-
-            <div className="produtos-grade">
-                <div className='produtos-item'>
-                  <img src={azul} alt="vermelho" />
-                  <p className='produtos-titulo'>GIGANTAMAX</p>
-                  <p className="produtos-preco">180$</p>
-                  <img src={cinco} alt="estrelas" />
-                </div>
-                <div className='produtos-item'>
-                  <img src={verde} alt="vermelho" />
-                  <p className='produtos-titulo'>MEGA-EVOLUTION</p>
-                  <p className="produtos-preco">200$</p>
-                  <img src={cinco} alt="estrelas" />
-                </div> 
-                <div className='produtos-item'>
-                  <img src={vermelho} alt="vermelho" />
-                  <p className='produtos-titulo'>HYPERBOOST</p>
-                  <p className="produtos-preco">160$</p>
-                  <img src={cinco} alt="estrelas" />
-                </div>
-                <div className='produtos-item'>
-                  <img src={branco} alt="vermelho" />
-                  <p className='produtos-titulo'>ULTRAWIDE</p>
-                  <p className="produtos-preco">140$</p>
-                  <img src={cinco} alt="estrelas" />
-                </div>
-              
-          </div>
-
-          <div className="produtos-grade">
-              <div className='produtos-item'>
-                <img src={branco} alt="vermelho" />
-                <p className='produtos-titulo'>ULTRAWIDE</p>
-                <p className="produtos-preco">140$</p>
-                <img src={cinco} alt="estrelas" />
-              </div>
-              <div className='produtos-item'>
-                <img src={vermelho} alt="vermelho" />
-                <p className='produtos-titulo'>HYPERBOOST</p>
-                <p className="produtos-preco">160$</p>
-                <img src={cinco} alt="estrelas" />
-              </div>
-              <div className='produtos-item'>
-                <img src={verde} alt="vermelho" />
-                <p className='produtos-titulo'>MEGA-EVOLUTION</p>
-                <p className="produtos-preco">200$</p>
-                <img src={cinco} alt="estrelas" />
-              </div> 
-              <div className='produtos-item'>
-                <img src={azul} alt="vermelho" />
-                <p className='produtos-titulo'>GIGANTAMAX</p>
-                <p className="produtos-preco">180$</p>
-                <img src={cinco} alt="estrelas" />
-              </div>
-              
-              
-          </div>
-
-        </container>
-
-      </section>
-    </>
+    <section className='mainProdutos'>
+      <h1>LISTA DE PRODUTOS</h1>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>NOME</th>
+              <th>DESCRIÇÃO</th>
+              <th>PREÇO</th>
+              <th>EDITAR / EXCLUIR</th>
+            </tr>
+          </thead>
+          <tbody>
+            {produtos.map((item, indice) => (
+              <tr key={indice}>
+                <td>{item.id}</td>
+                <td>{item.nome}</td>
+                <td>{item.descricao}</td>
+                <td>{item.valor}</td>
+                <td>
+                  <button onClick={() => handleEdit(item.id)}>
+                    <GrFormEdit />
+                  </button>
+                  {' '}
+                  |
+                  <button onClick={() => handleDelete(item.id)}>
+                    <GrTrash />
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
   );
 }
-export default Produtos;
