@@ -1,6 +1,6 @@
 # MINOTAURO
 
-Projeto desenvolvido para o checkpoint 01 da materia de Web Development do 2ª semestre
+Projeto desenvolvido para o checkpoint 01 da materia de Web Development do 2ª semestre.
 
 ![image](https://github.com/jorgebooz/Minotauro/assets/107008455/a5051019-7d84-41b9-8db3-8300513a97c9)
 
